@@ -12,6 +12,7 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.7.1",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
@@ -22,7 +23,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "custom-start": "env-cmd -f ./src/environment/.env.development env-cmd -f ./src/environment/.env.local start",
-    "custom-build": "env-cmd -f ./src/environment/.env.production env-cmd -f ./src/environment/.env.local start"
+    "custom-build": "env-cmd -f ./src/environment/.env.production env-cmd -f ./src/environment/.env.local start",
+    "json-server": "json-server --watch db.json --port 3001"
   },
   "eslintConfig": {
     "extends": [

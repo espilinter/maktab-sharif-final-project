@@ -1,0 +1,7 @@
+.slider {
+    overflow: auto;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 1440px;
+}

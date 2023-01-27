@@ -1,19 +1,93 @@
 {
-  "posts": [
+  "prudocts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "img": "https://dkstatics-public.digikala.com/digikala-products/4bfbd81ddd38bf9360aa77a5abeb24e463ce52ab_1610192619.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+      "price": "38,000",
+      "name": "پنیر تازه پاک",
+      "category": "لبنیات",
+      "SubCategory": "پنیر",
+      "stocks": "7"
+    },
+    {
+      "id": 2,
+      "img": "https://dkstatics-public.digikala.com/digikala-products/112773102.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+      "price": "200,000",
+      "name": "پنیر موزارلا 202",
+      "category": "لبنیات",
+      "SubCategory": "پنیر",
+      "stocks": "26"
+    },
+    {
+      "id": 3,
+      "img": "https://dkstatics-public.digikala.com/digikala-products/8ea9e32ee6397015d78c72ee2f618165d7faa353_1663565770.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+      "price": "85,000",
+      "name": "ماست سون کم چرب",
+      "category": "لبنیات",
+      "SubCategory": "ماست",
+      "stocks": "32"
+    },
+    {
+      "id": 4,
+      "img": "https://dkstatics-public.digikala.com/digikala-products/120501150.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+      "price": "23,000",
+      "name": "خامه صباح",
+      "category": "لبنیات",
+      "SubCategory": "خامه",
+      "stocks": "19"
+    },
+    {
+      "id": 5,
+      "img": "https://dkstatics-public.digikala.com/digikala-products/4bfbd81ddd38bf9360aa77a5abeb24e463ce52ab_1610192619.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+      "price": "85,000",
+      "name": "ماست سون کم چرب",
+      "category": "لبنیات",
+      "SubCategory": "ماست",
+      "stocks": "12"
     }
   ],
-  "comments": [
+  "users": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "userName": "farshad",
+      "password": "123456789"
+    },
+    {
+      "id": 2,
+      "userName": "ali",
+      "password": "987654321"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "shopper": [
+    {
+      "id": 1,
+      "name": "امیر رضا رحیم",
+      "totalPrice": "92,000",
+      "date": "1401/11/5"
+    },
+    {
+      "id": 2,
+      "name": "مهدی نصری",
+      "totalPrice": "85,000",
+      "date": "1401/11/5"
+    },
+    {
+      "id": 3,
+      "name": "یحیی گودرزی",
+      "totalPrice": "112,000",
+      "date": "1401/11/4"
+    },
+    {
+      "id": 4,
+      "name": "عبوالفضل پورعرب",
+      "totalPrice": "467,000",
+      "date": "1401/11/3"
+    },
+    {
+      "id": 5,
+      "name": "فریبرز عرب نیا",
+      "totalPrice": "25,000",
+      "date": "1401/11/1"
+    }
+  ]
 }

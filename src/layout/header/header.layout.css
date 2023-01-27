@@ -1,0 +1,11 @@
+header {
+    background-size: 100%;
+}
+
+.brand {
+    font-family: sans-serif;
+    background: linear-gradient(90deg, #F47249 0%, #8145FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
