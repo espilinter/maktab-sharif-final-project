@@ -1,5 +1,4 @@
-.brand {
-    font-family: sans-serif;
+.gradient {
     background: linear-gradient(90deg, #F47249 0%, #8145FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

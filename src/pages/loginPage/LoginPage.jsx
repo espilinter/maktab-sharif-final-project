@@ -37,20 +37,20 @@ const LoginPage = () => {
     // git cke add , commit , git checkout master, git merg dev , git push origne master
 
     return (
-        <div className="w-400 h-300 m-auto mt-200 loginCard relative">
-            <h1 className="pt-20 text-22 font-bold mb-20">ورود به پنل مدیریت فروشگاه</h1>
-            <div className="m-auto w-300 text-right">
+        <div className="w-380 h-400 m-auto mt-200 loginCard relative rounded-3xl border-2">
+            <h1 className="pt-50 text-22 font-bold mb-30">ورود به پنل مدیریت فروشگاه</h1>
+            <div className="m-auto w-300 text-right mb-20">
                 <label className="text-14">نام کاربری:</label>
-                <input type="text" className="w-full block mt-5 mb-10" value={userName} onChange={userNameValue} />
+                <input type="text" className="w-full block mt-10 mb-10" value={userName} onChange={userNameValue} />
             </div>
             <div className="m-auto w-300 text-right">
                 <label className="text-14 ">رمز عبور:</label>
-                <input type="password" className="w-full block m-auto mt-5 mb-10" value={password} onChange={passwordValue} />
+                <input type="password" className="w-full block m-auto mt-10 mb-10" value={password} onChange={passwordValue} />
             </div>
             <a href='/Management'>
-                <button className="bg-#1EAB24 shadow-button w-80  mt-20 mb-30 text-white h-30">ورود</button>
+                <button className="bg-#1EAB24 shadow-button w-80  mt-30 mb-30 text-white h-30">ورود</button>
             </a>
-            <a href='/' className='text-12 absolute bottom-5 left-5 text-blue'>بازگشت به صفحه اصلی</a>
+            <a href='/' className='text-12 absolute bottom-20 left-20 text-blue'>بازگشت به صفحه اصلی</a>
         </div>
     )
 }

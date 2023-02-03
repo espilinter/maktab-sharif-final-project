@@ -6,7 +6,8 @@ export const INTERNAL_PATHS = {
     MANAGEMENT: "/Management",
     ORDERS: "/Management/orders",
     PRODUCTS: "/Management/products",
-    INVENTORY: "/Management/inventory"
+    INVENTORY: "/Management/inventory",
+    COMMODITY: "/commodityPage"
 }
 
 export const EXTERNAL_PATHS = {

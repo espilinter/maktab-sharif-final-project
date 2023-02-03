@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'footer-background': "url('/src/assets/img/Frame.png')"
+        'header-background': "url('/src/assets/img/Frame.png')"
       },
       height: {
         '1': '1px',
@@ -2092,7 +2092,10 @@ module.exports = {
         '540': '540px',
         '520': '520px',
         '600': '600px',
-        '800': '800px'
+        '800': '800px',
+        '80%': '80%',
+        '90%': '90%',
+        '95%': '95%'
       },
       margin: {
         '1': '1px',
@@ -2599,6 +2602,9 @@ module.exports = {
         '520': '520px',
         '800': '800px'
       },
+      gridTemplateColumns: {
+        'orderCard': '100px 350px'
+      }
     },
     plugins: [],
     colors: {
@@ -2610,11 +2616,19 @@ module.exports = {
       '#B3B3B3': '#B3B3B3',
       '#FBFBFB': '#FBFBFB',
       '#1EAB24': '#1EAB24',
-      'blue': 'blue'
+      'blue': 'blue',
+      '#F47249': '#F47249',
+      '#8145FF': '#8145FF',
+      '#97D8CD': '#97D8CD',
+      '#C191C0': '#C191C0',
+      '#ff4800': '#ff4800',
+      '#f10000': '#f10000',
+      '#ff8c00': '#ff8c00'
     },
     boxShadow: {
       'cardShadow': '0 0 15px 2px rgba(0, 0, 0, 0.25)',
       'button': '5px 5px 4px rgba(0, 0, 0, 0.50)'
-    }
+    },
+
   }
 }
