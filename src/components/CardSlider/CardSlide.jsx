@@ -17,7 +17,7 @@ const CardSlider = (props) => {
 
     return (
         <>
-            <div className="h-140 relative w-full" >
+            <div className="h-140 relative w-full " >
                 <div className="h-140 w-40 rounded-l-lg border-solid border-2 border-#B3B3B3 inline-block mt-15 bg-white absolute right-0">
                     <button className="h-140 w-40 " ><img src={arrowR} width="20" className="mr-6" /></button>
                 </div>

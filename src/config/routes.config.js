@@ -7,7 +7,11 @@ export const INTERNAL_PATHS = {
     ORDERS: "/Management/orders",
     PRODUCTS: "/Management/products",
     INVENTORY: "/Management/inventory",
-    COMMODITY: "/commodityPage"
+    COMMODITY: "/commodityPage",
+    CART: "/cartPage",
+    INFORMATION: "/informationPage",
+    PAYMENT: "/paymentPage",
+    REULT: "/resultPage"
 }
 
 export const EXTERNAL_PATHS = {

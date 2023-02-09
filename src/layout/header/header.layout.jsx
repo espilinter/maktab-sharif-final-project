@@ -4,7 +4,7 @@ import "./header.layout.css"
 export const Header = () => {
     return (
         <header className="w-full h-100 relative bg-header-background bg-cover">
-            <a href='#' className='sabadKharid text-white absolute text-22 flex left-20 top-30'>
+            <a href='/cartPage' className='sabadKharid text-white absolute text-22 flex left-20 top-30'>
                 <img src={shoppingCart} className='shoppingCart w-25 h-25 mt-5' />
                 <span className="text-white">سبد خرید</span>
             </a>

@@ -11,6 +11,7 @@ export const Inventory = () => {
     const [id, setId] = useState(null);
     const [renderNumber, setRenderNumber] = useState(1)
     const [limit, setLimit] = useState(5)
+    const [dataLenght, setDataLenght] = useState()
     useEffect(() => {
         fetchData()
     }, [renderNumber])
@@ -27,6 +28,7 @@ export const Inventory = () => {
 
     useEffect(() => {
         fetchData()
+        fetchDataLenght()
     }, [])
 
     async function putData(data) {
@@ -58,10 +60,15 @@ export const Inventory = () => {
         setstocks(Data.stocks);
     }
 
+    function fetchDataLenght() {
+        axios.get("http://localhost:3001/prudocts").then((response) => {
+            setDataLenght(response.data);
+        });
+    }
+
     function cleaner() {
         setprice("");
         setstocks("");
-
     }
 
     const priceInput = event => {
@@ -95,6 +102,19 @@ export const Inventory = () => {
         inputFilder(params)
     }
 
+    function minus() {
+        if (renderNumber > 1) {
+            setRenderNumber(renderNumber - 1)
+        }
+    }
+
+    function plus() {
+        let lenght = dataLenght.length / limit;
+        if (renderNumber < lenght) {
+            setRenderNumber(renderNumber + 1)
+
+        }
+    }
     return (
         <>
             <Management />
@@ -134,11 +154,11 @@ export const Inventory = () => {
                 </Popup>
             </div >
             <div className='flex w-120 m-auto mt-20 border-2 border-#B3B3B3'>
-                <button onClick={() => setRenderNumber(renderNumber + 1)} className="w-40">{"<<"}</button>
+                <button onClick={plus} className="w-40">{"<<"}</button>
                 <div className='inline-block border-x-2 border-#B3B3B3'>
                     <p className='text-26 w-40'>{renderNumber}</p>
                 </div>
-                <button onClick={() => setRenderNumber(renderNumber - 1)} className="w-40">{">>"}</button>
+                <button onClick={minus} className="w-40">{">>"}</button>
             </div>
         </>
     )

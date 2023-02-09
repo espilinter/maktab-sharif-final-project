@@ -15,7 +15,9 @@ export const Inventory = () => {
     const ref = useRef();
     const [allData, setAllData] = useState([])
     const [limit, setLimit] = useState(5)
+    const [dataLenght, setDataLenght] = useState()
     useEffect(() => {
+        fetchDataLenght()
         fetchData()
     }, [])
 
@@ -131,6 +133,25 @@ export const Inventory = () => {
         setimg("");
     }
 
+    function minus() {
+        if (renderNumber > 1) {
+            setRenderNumber(renderNumber - 1)
+        }
+    }
+
+
+    function fetchDataLenght() {
+        axios.get("http://localhost:3001/prudocts").then((response) => {
+            setDataLenght(response.data);
+        });
+    }
+    function plus() {
+        let lenght = dataLenght.length / limit;
+        if (renderNumber < lenght) {
+            setRenderNumber(renderNumber + 1)
+
+        }
+    }
     return (
         <Fragment className="relative">
             <Management />
@@ -185,7 +206,7 @@ export const Inventory = () => {
                 <div className='inline-block border-x-2 border-#B3B3B3'>
                     <p className='text-26 w-40'>{renderNumber}</p>
                 </div>
-                <button onClick={() => setRenderNumber(renderNumber - 1)} className="w-40">{">>"}</button>
+                <button onClick={minus} className="w-40">{">>"}</button>
             </div>
         </Fragment >
     )

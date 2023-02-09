@@ -16,6 +16,8 @@ export const InventoryTable = (props) => {
 
     let delivered = {};
     delivered.status = "delivered"
+    let totalPrice = 0;
+    props.item.cart.map((item) => (totalPrice = totalPrice + (item.price * item.stocks)))
 
     async function patchData(data) {
         const res = await fetch(`http://localhost:3001/shopper/${props.item.id}`, {
@@ -33,7 +35,7 @@ export const InventoryTable = (props) => {
             <>
                 <tr className="h-40">
                     <td className="text-right border pr-5 ">{props.item.name}</td>
-                    <td className="text-right border pr-5">{props.item.totalPrice}</td>
+                    <td className="text-right border pr-5">{totalPrice}</td>
                     <td className=" border">{props.item.deliveryTime}</td>
                     <td className=" border">
                         <Popup trigger=

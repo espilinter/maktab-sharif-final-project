@@ -1,0 +1,8 @@
+.gardientGreen {
+    background: linear-gradient(272.01deg, #15ff9d 0%, #83ff30 100%);
+}
+
+.gardientOrang {
+    background: linear-gradient(272.01deg, #ffd415 0%, #ff8d30 100%);
+    color: #cc0000;
+}

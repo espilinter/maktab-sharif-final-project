@@ -47,7 +47,7 @@ const App = () => {
 
             <PageContaner>
                 <div>
-                    <Carousel showThumbs={false} autoPlay={true} className='mt-10'>
+                    <Carousel showThumbs={false} autoPlay={false} className='mt-10'>
                         <div>
                             <img src={tabligh1} />
                         </div>
